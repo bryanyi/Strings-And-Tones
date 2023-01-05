@@ -1,13 +1,13 @@
 server:
-  port: 8080
+  port: 8081
 
 spring:
   application:
-    name: ProductService
+    name: OrderService
   datasource:
     username: bryanyi
     password: stringsandtonesadmin
-    url: jdbc:postgresql://${DB_HOST:localhost}:5432/stringsandtones_productdb
+    url: jdbc:postgresql://${DB_HOST:localhost}:5432/stringsandtones_ordersdb
   jpa:
     hibernate:
       ddl-auto: update

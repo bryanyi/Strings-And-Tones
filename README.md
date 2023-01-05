@@ -30,3 +30,5 @@
         </dependencies>
 
       ```
+## Handling repetitive configurations
+- Creating a global config
