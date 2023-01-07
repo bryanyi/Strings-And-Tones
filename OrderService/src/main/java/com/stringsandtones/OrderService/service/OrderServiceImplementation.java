@@ -1,6 +1,7 @@
 package com.stringsandtones.OrderService.service;
 
 import com.stringsandtones.OrderService.entity.Order;
+import com.stringsandtones.OrderService.external.CompanyClients.ProductService;
 import com.stringsandtones.OrderService.model.OrderRequest;
 import com.stringsandtones.OrderService.repository.OrderRepository;
 import lombok.extern.log4j.Log4j2;
@@ -13,7 +14,10 @@ import java.time.Instant;
 @Log4j2
 public class OrderServiceImplementation implements OrderService {
 
-  @Autowired private OrderRepository orderRepository;
+  @Autowired
+  private OrderRepository orderRepository;
+  @Autowired
+  private ProductService productService;
 
   @Override
   public long placeOrder(OrderRequest orderRequest) {
@@ -22,6 +26,11 @@ public class OrderServiceImplementation implements OrderService {
     // Call payment service to determine if the order was successful.
     // - Should provide status like COMPLETE or CANCELLED, etc
     log.info("Placing order for {}", orderRequest);
+
+    productService.reduceQuantity(orderRequest.getProductId(),orderRequest.getQuantity());
+
+    log.info("Product with id {} quantity successfully updated in PRODUCT-SERVICE", orderRequest.getProductId());
+
     Order order =
         Order.builder()
             .productId(orderRequest.getProductId())
