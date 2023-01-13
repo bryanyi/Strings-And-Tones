@@ -1,11 +1,11 @@
 package com.stringsandtones.OrderService.entity;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.*;
 import java.time.Instant;
 
 @Entity
@@ -17,7 +17,8 @@ import java.time.Instant;
 public class Order {
 
   @Id
-  @GeneratedValue(strategy = GenerationType.AUTO)
+  @SequenceGenerator(name = "order_id_sequence", sequenceName = "order_id_sequence")
+  @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "order_id_sequence")
   private long id;
 
   @Column(name = "PRODUCT_ID")

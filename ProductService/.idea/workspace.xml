@@ -5,8 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aececbab-8679-4d8d-b880-d7d8151be9a3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../OrderService/src/main/java/com/stringsandtones/OrderService/exception/RestResponseEntityExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/src/main/java/com/stringsandtones/OrderService/exception/RestResponseEntityExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConfigServer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ConfigServer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OrderService/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OrderService/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OrderService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OrderService/src/main/java/com/stringsandtones/OrderService/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/src/main/java/com/stringsandtones/OrderService/entity/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OrderService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stringsandtones/ProductService/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stringsandtones/ProductService/entity/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/ProductServiceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/ProductServiceApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/controller/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/entity/Product$ProductBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/entity/Product$ProductBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/entity/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/entity/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/exception/ProductServiceException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/exception/ProductServiceException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/exception/RestResponseEntityExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/exception/RestResponseEntityExceptionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/model/ErrorResponse$ErrorResponseBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/model/ErrorResponse$ErrorResponseBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/model/ErrorResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/model/ErrorResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/model/ProductRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/model/ProductRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/model/ProductResponse$ProductResponseBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/model/ProductResponse$ProductResponseBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/model/ProductResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/model/ProductResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/service/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/service/ProductServiceImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/service/ProductServiceImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-registry/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../service-registry/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +81,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="copyright.filetypes.JAVA" />

@@ -35,3 +35,6 @@
 
 ## How does one service call another service's API? We use Feign Client
 - Need to figure out how to create libraries so that external clients can be called from a separate package rather than repeating reused classes.
+
+## Installing openzipki
+- `docker run -d -p 9411:9411 openzipkin/zipkin`
