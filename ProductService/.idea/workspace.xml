@@ -5,34 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aececbab-8679-4d8d-b880-d7d8151be9a3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../ConfigServer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ConfigServer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OrderService/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OrderService/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OrderService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OrderService/src/main/java/com/stringsandtones/OrderService/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/src/main/java/com/stringsandtones/OrderService/entity/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OrderService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PaymentService/src/main/java/com/example/PaymentService/PaymentApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OrderService/src/main/java/com/stringsandtones/OrderService/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/src/main/java/com/stringsandtones/OrderService/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OrderService/src/main/java/com/stringsandtones/OrderService/model/PaymentResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/src/main/java/com/stringsandtones/OrderService/model/PaymentResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OrderService/src/main/java/com/stringsandtones/OrderService/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/src/main/java/com/stringsandtones/OrderService/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OrderService/src/main/java/com/stringsandtones/OrderService/service/OrderServiceImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/src/main/java/com/stringsandtones/OrderService/service/OrderServiceImplementation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stringsandtones/ProductService/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stringsandtones/ProductService/entity/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/ProductServiceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/ProductServiceApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/controller/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/entity/Product$ProductBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/entity/Product$ProductBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/entity/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/entity/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/exception/ProductServiceException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/exception/ProductServiceException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/exception/RestResponseEntityExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/exception/RestResponseEntityExceptionHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/model/ErrorResponse$ErrorResponseBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/model/ErrorResponse$ErrorResponseBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/model/ErrorResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/model/ErrorResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/model/ProductRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/model/ProductRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/model/ProductResponse$ProductResponseBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/model/ProductResponse$ProductResponseBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/model/ProductResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/model/ProductResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/service/ProductService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/service/ProductServiceImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/service/ProductServiceImplementation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../service-registry/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../service-registry/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,30 +65,18 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="copyright.filetypes.JAVA" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/../service-registry/src/main" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.stringsandtones.OrderService.model" />
       <recent name="com.stringsandtones.OrderService.exception" />
     </key>
   </component>
   <component name="RunManager" selected="Application.OrderServiceApplication">
-    <configuration name="ClientsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.stringsandtones.Clients.ClientsApplication" />
-      <module name="Clients" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.stringsandtones.Clients.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ConfigServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.stringsandtones.ConfigServer.ConfigServerApplication" />
       <module name="ConfigServer" />
@@ -127,6 +96,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.stringsandtones.OrderService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaymentApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.PaymentService.PaymentApplication" />
+      <module name="PaymentService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.PaymentService.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -176,10 +158,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.OrderServiceApplication" />
+        <item itemvalue="Application.PaymentApplication" />
         <item itemvalue="Application.ProductServiceApplication" />
         <item itemvalue="Application.ConfigServerApplication" />
         <item itemvalue="Application.ServiceRegistryApplication" />
-        <item itemvalue="Application.ClientsApplication" />
       </list>
     </recent_temporary>
   </component>
