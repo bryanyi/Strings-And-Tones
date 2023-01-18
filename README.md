@@ -38,3 +38,10 @@
 
 ## Installing openzipki
 - `docker run -d -p 9411:9411 openzipkin/zipkin`
+- Starting Spring Boot version 3.0, Sleuth has changed to micrometer.
+- I switched to version 2.7.3 to implement Sleuth. Had to clear and restart cache on Intellij.
+
+## Building the Order Service's response.
+- Using RestTemplate to call external API's. 
+- I have to get the same class model's from the other microservice's, so there are common classes between different microservices. 
+  - I'm sure I have to somehow put these classes into an external microservice to avoid repeating classes. Not sure how to achieve that right now.

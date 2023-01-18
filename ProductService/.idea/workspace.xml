@@ -5,15 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aececbab-8679-4d8d-b880-d7d8151be9a3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../PaymentService/src/main/java/com/example/PaymentService/PaymentApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OrderService/src/main/java/com/stringsandtones/OrderService/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/src/main/java/com/stringsandtones/OrderService/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OrderService/src/main/java/com/stringsandtones/OrderService/model/PaymentResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/src/main/java/com/stringsandtones/OrderService/model/PaymentResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OrderService/src/main/java/com/stringsandtones/OrderService/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/src/main/java/com/stringsandtones/OrderService/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OrderService/src/main/java/com/stringsandtones/OrderService/model/OrderResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/src/main/java/com/stringsandtones/OrderService/model/OrderResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OrderService/src/main/java/com/stringsandtones/OrderService/model/PaymentDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/src/main/java/com/stringsandtones/OrderService/model/PaymentDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../OrderService/src/main/java/com/stringsandtones/OrderService/service/OrderServiceImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/src/main/java/com/stringsandtones/OrderService/service/OrderServiceImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PaymentService/src/main/java/com/example/PaymentService/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PaymentService/src/main/java/com/example/PaymentService/controller/PaymentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PaymentService/src/main/java/com/example/PaymentService/service/PaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PaymentService/src/main/java/com/example/PaymentService/service/PaymentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PaymentService/src/main/java/com/example/PaymentService/service/PaymentServiceImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PaymentService/src/main/java/com/example/PaymentService/service/PaymentServiceImplementation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

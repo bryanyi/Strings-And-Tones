@@ -15,7 +15,8 @@ import java.time.Instant;
 @Log4j2
 public class PaymentServiceImplementation implements PaymentService {
 
-  @Autowired TransactionDetailsRepository transactionDetailsRepository;
+  @Autowired
+  private TransactionDetailsRepository transactionDetailsRepository;
 
   @Override
   public long initPayment(PaymentRequest paymentRequest) {
@@ -39,9 +40,9 @@ public class PaymentServiceImplementation implements PaymentService {
   }
 
   @Override
-  public PaymentResponse getPaymentDetailsByOrderId(long orderId) {
+  public PaymentResponse getPaymentDetailsByOrderId(String orderId) {
     log.info("Fetching payment details for order with id of {}", orderId);
-    TransactionDetails transactionDetails = transactionDetailsRepository.findByOrderId(orderId);
+    TransactionDetails transactionDetails = transactionDetailsRepository.findByOrderId(Long.valueOf(orderId));
 
     PaymentResponse paymentResponse =
         PaymentResponse.builder()

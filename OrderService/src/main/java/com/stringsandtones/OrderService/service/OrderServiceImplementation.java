@@ -22,6 +22,9 @@ public class OrderServiceImplementation implements OrderService {
   @Autowired private PaymentService paymentService;
   @Autowired private RestTemplate restTemplate;
 
+  private final String PRODUCT_SERVICE_API = "http://PRODUCT-SERVICE/api/v1/product/";
+  private final String PAYMENT_SERVICE_API = "http://PAYMENT-SERVICE/api/v1/payment/";
+
   @Override
   public long placeOrder(OrderRequest orderRequest) {
     // orderRequest needs to be mapped to the Order object
@@ -84,21 +87,28 @@ public class OrderServiceImplementation implements OrderService {
                     new CustomException(
                         "Order with id of " + orderId + " was not found!", "NOT_FOUND", 404));
 
-    log.info("Fetching product info from PRODUCT-SERVICE");
+    log.info("Fetching product response info from PRODUCT-SERVICE");
 
     ProductResponse productResponse =
         restTemplate.getForObject(
-            "http://PRODUCT-SERVICE/api/v1/product/" + order.getProductId(), ProductResponse.class);
+            PRODUCT_SERVICE_API + order.getProductId(), ProductResponse.class);
 
-    log.info("Fetching payment info from PAYMENT-SERVICE");
+    log.info("Fetching payment response info from PAYMENT-SERVICE");
     PaymentResponse paymentResponse =
-        restTemplate.getForObject(
-            "http://PRODUCT-SERVICE/api/v1/payment/" + order.getId(), PaymentResponse.class);
+        restTemplate.getForObject(PAYMENT_SERVICE_API + order.getId(), PaymentResponse.class);
 
     ProductResponse productDetails =
         ProductResponse.builder()
             .productName(productResponse.getProductName())
             .productId(productResponse.getProductId())
+            .build();
+
+    PaymentDetails paymentDetails =
+        PaymentDetails.builder()
+            .paymentId(paymentResponse.getPaymentId())
+            .paymentMode(paymentResponse.getPaymentMode())
+            .paymentStatus(paymentResponse.getStatus())
+            .paymentDate(paymentResponse.getPaymentDate())
             .build();
 
     OrderResponse orderResponse =
@@ -108,7 +118,7 @@ public class OrderServiceImplementation implements OrderService {
             .amount(order.getAmount())
             .orderDate(order.getOrderDate())
             .productDetails(productDetails)
-                .paymentDetails(paymentDetails)
+            .paymentDetails(paymentDetails)
             .build();
 
     return orderResponse;

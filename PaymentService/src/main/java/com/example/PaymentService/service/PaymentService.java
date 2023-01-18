@@ -6,5 +6,5 @@ import com.example.PaymentService.model.PaymentResponse;
 public interface PaymentService {
   long initPayment(PaymentRequest paymentRequest);
 
-  PaymentResponse getPaymentDetailsByOrderId(long orderId);
+  PaymentResponse getPaymentDetailsByOrderId(String orderId);
 }

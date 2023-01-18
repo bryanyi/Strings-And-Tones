@@ -17,5 +17,5 @@ public class OrderResponse {
   private String orderStatus;
   private long amount;
   private ProductResponse productDetails;
-  private PaymentResponse paymentDetails;
+  private PaymentDetails paymentDetails;
 }
