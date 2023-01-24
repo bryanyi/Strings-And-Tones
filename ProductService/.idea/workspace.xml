@@ -5,16 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aececbab-8679-4d8d-b880-d7d8151be9a3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../ConfigServer/src/test/java/com/stringsandtones/ConfigServer/ConfigServerApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OrderService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OrderService/src/main/java/com/stringsandtones/OrderService/external/CompanyClients/PaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/src/main/java/com/stringsandtones/OrderService/external/CompanyClients/PaymentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OrderService/src/main/java/com/stringsandtones/OrderService/external/CompanyClients/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/src/main/java/com/stringsandtones/OrderService/external/CompanyClients/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OrderService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CloudGateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudGateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CloudGateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudGateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CloudGateway/src/main/resources/banner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudGateway/src/main/resources/banner.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
