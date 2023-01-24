@@ -45,3 +45,12 @@
 - Using RestTemplate to call external API's. 
 - I have to get the same class model's from the other microservice's, so there are common classes between different microservices. 
   - I'm sure I have to somehow put these classes into an external microservice to avoid repeating classes. Not sure how to achieve that right now.
+
+
+## Frustrations
+- Creating a new project but keeping all the dependencies consistent.
+  - Is there an alternative to start.spring.io besides utilizing the command line to apply dependencies as well as versioning?
+
+## Implementing a circuit breaker in the api gateway
+- Link to docs: https://resilience4j.readme.io/docs/circuitbreaker
+

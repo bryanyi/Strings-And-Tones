@@ -1,0 +1,58 @@
+server:
+  port: 9090
+
+spring:
+  application:
+    name: CLOUD-GATEWAY
+  config:
+    import: configserver:http://localhost:9296
+  zipkin:
+    base-url: http://localhost:9411
+  cloud:
+    gateway:
+      routes:
+        - id: ORDER-SERVICE
+          uri: lb://ORDER-SERVICE
+          predicates:
+            - Path=/api/v1/order/**
+          # Implementing the circuit breaker
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: ORDER-SERVICE
+                # orderServiceFallBack will be the backup api
+                fallbackuri: forward:/orderServiceFallback
+            -  name: RequestRateLimiter
+               args:
+                 redis-rate-limiter.replenishRate: 1
+                 redis-rate-limiter.burstCapacity: 1
+        - id: PAYMENT-SERVICE
+          uri: lb://PAYMENT-SERVICE
+          predicates:
+            - Path=/api/v1/payment/**
+          # Implementing the circuit breaker
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: PAYMENT-SERVICE
+                # orderServiceFallBack will be the backup api
+                fallbackuri: forward:/paymentServiceFallback
+            -  name: RequestRateLimiter
+               args:
+                 redis-rate-limiter.replenishRate: 1
+                 redis-rate-limiter.burstCapacity: 1
+        - id: PRODUCT-SERVICE
+          uri: lb://PRODUCT-SERVICE
+          predicates:
+            - Path=/api/v1/product/**
+          # Implementing the circuit breaker
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: PRODUCT-SERVICE
+                # orderServiceFallBack will be the backup api
+                fallbackuri: forward:/productServiceFallback
+            -  name: RequestRateLimiter
+               args:
+                 redis-rate-limiter.replenishRate: 1
+                 redis-rate-limiter.burstCapacity: 1
