@@ -17,10 +17,11 @@ spring:
         format_sql: true
     show-sql: true
   config:
-    import: configserver:http://localhost:9296
+    import:
+      - configserver:http://localhost:9296
+      - secrets.yml
   zipkin:
     base-url: http://localhost:9411
-
 resilience4j:
   circuitbreaker:
     instances:

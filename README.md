@@ -54,3 +54,6 @@
 ## Implementing a circuit breaker in the api gateway
 - Link to docs: https://resilience4j.readme.io/docs/circuitbreaker
 
+## Okta authentication
+- After creating the application, I had to add people to the APPLICATION. 
+- It wasn't enough just to have users set up inside of Okta's general dashboard.

@@ -1,0 +1,34 @@
+package com.example.PaymentService.security;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.annotation.web.configurers.oauth2.server.resource.OAuth2ResourceServerConfigurer;
+import org.springframework.security.web.SecurityFilterChain;
+
+@Configuration
+@EnableWebSecurity
+public class WebSecurityConfig {
+
+  @Bean
+  public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+    /*
+      The logic is similar to Order-Service, but Order-Service utilizes
+      the "@EnableGlobalMethodSecurity(prePostEnabled = true)", so it's just a different way of doing it.
+
+      Also, the payment and product services will be called internally
+
+    */
+    http.authorizeRequests(
+            authorizeRequests ->
+                authorizeRequests
+                    .antMatchers("/api/v1/payment")
+                    .hasAuthority("SCOPE_internal")
+                    .anyRequest()
+                    .authenticated())
+        .oauth2ResourceServer(OAuth2ResourceServerConfigurer::jwt);
+    return http.build();
+  }
+}

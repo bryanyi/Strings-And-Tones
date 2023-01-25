@@ -1,13 +1,13 @@
 server:
   port: 9090
 
-spring.config.import=optional: secrets.yml
-
 spring:
   application:
-    name: CLOUD-GATEWAY
+    name: API-GATEWAY
   config:
-    import: configserver:http://localhost:9296
+    import:
+      - configserver:http://localhost:9296
+      - secrets.yml
   zipkin:
     base-url: http://localhost:9411
   cloud:
@@ -58,10 +58,3 @@ spring:
                args:
                  redis-rate-limiter.replenishRate: 1
                  redis-rate-limiter.burstCapacity: 1
-
-okta:
-  oauth2:
-    issuer: https://dev-78869635.okta.com/oauth2/default
-    audience: api://default
-    client-secret:
-    scopes:
