@@ -5,20 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aececbab-8679-4d8d-b880-d7d8151be9a3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CloudGateway/src/main/java/com/stringsandtones/CloudGateway/CloudGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudGateway/src/main/java/com/stringsandtones/CloudGateway/CloudGatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CloudGateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../CloudGateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ConfigServer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../ConfigServer/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../OrderService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OrderService/src/main/java/com/stringsandtones/OrderService/config/OrderConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/src/main/java/com/stringsandtones/OrderService/config/OrderConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OrderService/src/main/java/com/stringsandtones/OrderService/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/src/main/java/com/stringsandtones/OrderService/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OrderService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PaymentService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PaymentService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OrderService/src/main/java/com/stringsandtones/OrderService/config/OrderConfig.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stringsandtones/ProductService/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stringsandtones/ProductService/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stringsandtones/ProductService/controller/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +20,7 @@
         <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -66,7 +56,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CloudGateway/src/main/resources" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../OrderService/src/test/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -74,10 +66,17 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../OrderService/src/test/resources" />
       <recent name="$PROJECT_DIR$/../CloudGateway/src/main/resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/../service-registry/src/main" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.stringsandtones.OrderService.service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.stringsandtones.OrderService.security" />
@@ -85,68 +84,82 @@
       <recent name="com.stringsandtones.OrderService.exception" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CloudGatewayApplication">
-    <configuration name="CloudGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.stringsandtones.CloudGateway.CloudGatewayApplication" />
-      <module name="CloudGateway" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.stringsandtones.CloudGateway.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConfigServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.stringsandtones.ConfigServer.ConfigServerApplication" />
-      <module name="ConfigServer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.stringsandtones.ConfigServer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OrderServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.stringsandtones.OrderService.OrderServiceApplication" />
+  <component name="RunManager" selected="JUnit.OrderServiceImplementationTest">
+    <configuration name="OrderServiceImplementationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OrderService" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.stringsandtones.OrderService.*" />
+          <option name="PATTERN" value="com.stringsandtones.OrderService.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.stringsandtones.OrderService.service" />
+      <option name="MAIN_CLASS_NAME" value="com.stringsandtones.OrderService.service.OrderServiceImplementationTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PaymentApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.PaymentService.PaymentApplication" />
-      <module name="PaymentService" />
+    <configuration name="OrderServiceImplementationTest.test_When_Order_Successful" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OrderService" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.PaymentService.*" />
+          <option name="PATTERN" value="com.stringsandtones.OrderService.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.stringsandtones.OrderService.service" />
+      <option name="MAIN_CLASS_NAME" value="com.stringsandtones.OrderService.service.OrderServiceImplementationTest" />
+      <option name="METHOD_NAME" value="test_When_Order_Successful" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.stringsandtones.ProductService.ProductServiceApplication" />
-      <module name="ProductService" />
+    <configuration name="OrderServiceImplementationTest.test_When_getOrder_fails" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OrderService" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.stringsandtones.ProductService.*" />
+          <option name="PATTERN" value="com.stringsandtones.OrderService.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.stringsandtones.OrderService.service" />
+      <option name="MAIN_CLASS_NAME" value="com.stringsandtones.OrderService.service.OrderServiceImplementationTest" />
+      <option name="METHOD_NAME" value="test_When_getOrder_fails" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderServiceImplementationTest.test_When_placeOrder_Fails_But_Order_Placed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OrderService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.stringsandtones.OrderService.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.stringsandtones.OrderService.service" />
+      <option name="MAIN_CLASS_NAME" value="com.stringsandtones.OrderService.service.OrderServiceImplementationTest" />
+      <option name="METHOD_NAME" value="test_When_placeOrder_Fails_But_Order_Placed" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderServiceImplementationTest.test_when_placeOrder_Succeeds" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OrderService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.stringsandtones.OrderService.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.stringsandtones.OrderService.service" />
+      <option name="MAIN_CLASS_NAME" value="com.stringsandtones.OrderService.service.OrderServiceImplementationTest" />
+      <option name="METHOD_NAME" value="test_when_placeOrder_Succeeds" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -166,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ConfigServerApplication" />
-        <item itemvalue="Application.CloudGatewayApplication" />
-        <item itemvalue="Application.OrderServiceApplication" />
-        <item itemvalue="Application.ProductServiceApplication" />
-        <item itemvalue="Application.PaymentApplication" />
+        <item itemvalue="JUnit.OrderServiceImplementationTest" />
+        <item itemvalue="JUnit.OrderServiceImplementationTest.test_When_placeOrder_Fails_But_Order_Placed" />
+        <item itemvalue="JUnit.OrderServiceImplementationTest.test_when_placeOrder_Succeeds" />
+        <item itemvalue="JUnit.OrderServiceImplementationTest.test_When_getOrder_fails" />
+        <item itemvalue="JUnit.OrderServiceImplementationTest.test_When_Order_Successful" />
       </list>
     </recent_temporary>
   </component>
