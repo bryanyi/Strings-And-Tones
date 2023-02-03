@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aececbab-8679-4d8d-b880-d7d8151be9a3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../OrderService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OrderService/src/main/java/com/stringsandtones/OrderService/config/OrderConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OrderService/src/main/java/com/stringsandtones/OrderService/external/CompanyClients/PaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/src/main/java/com/stringsandtones/OrderService/external/CompanyClients/PaymentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OrderService/src/main/java/com/stringsandtones/OrderService/external/CompanyClients/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/src/main/java/com/stringsandtones/OrderService/external/CompanyClients/ProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +19,8 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -76,6 +76,7 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.stringsandtones.OrderService.controller" />
       <recent name="com.stringsandtones.OrderService.service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -84,81 +85,81 @@
       <recent name="com.stringsandtones.OrderService.exception" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.OrderServiceImplementationTest">
-    <configuration name="OrderServiceImplementationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.OrderControllerTest.testWhen_GetOrder_Order_Not_Found">
+    <configuration name="OrderControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OrderService" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.stringsandtones.OrderService.service.*" />
+          <option name="PATTERN" value="com.stringsandtones.OrderService.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.stringsandtones.OrderService.service" />
-      <option name="MAIN_CLASS_NAME" value="com.stringsandtones.OrderService.service.OrderServiceImplementationTest" />
+      <option name="PACKAGE_NAME" value="com.stringsandtones.OrderService.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.stringsandtones.OrderService.controller.OrderControllerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderServiceImplementationTest.test_When_Order_Successful" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderControllerTest.testWhen_GetOrder_Order_Not_Found" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OrderService" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.stringsandtones.OrderService.service.*" />
+          <option name="PATTERN" value="com.stringsandtones.OrderService.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.stringsandtones.OrderService.service" />
-      <option name="MAIN_CLASS_NAME" value="com.stringsandtones.OrderService.service.OrderServiceImplementationTest" />
-      <option name="METHOD_NAME" value="test_When_Order_Successful" />
+      <option name="PACKAGE_NAME" value="com.stringsandtones.OrderService.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.stringsandtones.OrderService.controller.OrderControllerTest" />
+      <option name="METHOD_NAME" value="testWhen_GetOrder_Order_Not_Found" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderServiceImplementationTest.test_When_getOrder_fails" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderControllerTest.test_When_getOrder_Succeeds" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OrderService" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.stringsandtones.OrderService.service.*" />
+          <option name="PATTERN" value="com.stringsandtones.OrderService.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.stringsandtones.OrderService.service" />
-      <option name="MAIN_CLASS_NAME" value="com.stringsandtones.OrderService.service.OrderServiceImplementationTest" />
-      <option name="METHOD_NAME" value="test_When_getOrder_fails" />
+      <option name="PACKAGE_NAME" value="com.stringsandtones.OrderService.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.stringsandtones.OrderService.controller.OrderControllerTest" />
+      <option name="METHOD_NAME" value="test_When_getOrder_Succeeds" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderServiceImplementationTest.test_When_placeOrder_Fails_But_Order_Placed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderControllerTest.test_When_placeOrder_With_Incorrect_Authorization_throw403" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OrderService" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.stringsandtones.OrderService.service.*" />
+          <option name="PATTERN" value="com.stringsandtones.OrderService.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.stringsandtones.OrderService.service" />
-      <option name="MAIN_CLASS_NAME" value="com.stringsandtones.OrderService.service.OrderServiceImplementationTest" />
-      <option name="METHOD_NAME" value="test_When_placeOrder_Fails_But_Order_Placed" />
+      <option name="PACKAGE_NAME" value="com.stringsandtones.OrderService.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.stringsandtones.OrderService.controller.OrderControllerTest" />
+      <option name="METHOD_NAME" value="test_When_placeOrder_With_Incorrect_Authorization_throw403" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderServiceImplementationTest.test_when_placeOrder_Succeeds" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderControllerTest.test_when_placeOrder_and_initPayment_Succeeds" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OrderService" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.stringsandtones.OrderService.service.*" />
+          <option name="PATTERN" value="com.stringsandtones.OrderService.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.stringsandtones.OrderService.service" />
-      <option name="MAIN_CLASS_NAME" value="com.stringsandtones.OrderService.service.OrderServiceImplementationTest" />
-      <option name="METHOD_NAME" value="test_when_placeOrder_Succeeds" />
+      <option name="PACKAGE_NAME" value="com.stringsandtones.OrderService.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.stringsandtones.OrderService.controller.OrderControllerTest" />
+      <option name="METHOD_NAME" value="test_when_placeOrder_and_initPayment_Succeeds" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -179,11 +180,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.OrderServiceImplementationTest" />
-        <item itemvalue="JUnit.OrderServiceImplementationTest.test_When_placeOrder_Fails_But_Order_Placed" />
-        <item itemvalue="JUnit.OrderServiceImplementationTest.test_when_placeOrder_Succeeds" />
-        <item itemvalue="JUnit.OrderServiceImplementationTest.test_When_getOrder_fails" />
-        <item itemvalue="JUnit.OrderServiceImplementationTest.test_When_Order_Successful" />
+        <item itemvalue="JUnit.OrderControllerTest.testWhen_GetOrder_Order_Not_Found" />
+        <item itemvalue="JUnit.OrderControllerTest.test_When_getOrder_Succeeds" />
+        <item itemvalue="JUnit.OrderControllerTest.test_when_placeOrder_and_initPayment_Succeeds" />
+        <item itemvalue="JUnit.OrderControllerTest" />
+        <item itemvalue="JUnit.OrderControllerTest.test_When_placeOrder_With_Incorrect_Authorization_throw403" />
       </list>
     </recent_temporary>
   </component>
@@ -208,5 +209,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ProductService$OrderServiceImplementationTest.ic" NAME="OrderServiceImplementationTest Coverage Results" MODIFIED="1674785801319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.stringsandtones.OrderService.service.*</FILTER>
+    </SUITE>
   </component>
 </project>

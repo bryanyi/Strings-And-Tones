@@ -1,0 +1,8 @@
+{
+  "paymentId": 1,
+  "paymentMode": "VISA_CREDIT_CARD",
+  "status": "SUCCESS",
+  "amount": 999,
+  "paymentDate": "2023-01-01T00:00:00",
+  "orderId": 1
+}
