@@ -57,3 +57,17 @@
 ## Okta authentication
 - After creating the application, I had to add people to the APPLICATION. 
 - It wasn't enough just to have users set up inside of Okta's general dashboard.
+
+## Unit testing
+
+## Dockerizing
+- `docker pull redis`: pull down an image.
+- `docker images`: see your images.
+- `docker run --name redis-latest redis`: run the redis image.
+- `docker ps -a`: See the available containers
+
+## Creating our own docker images for each service with docker files
+- Command to build the image for serviceregistry: `docker build -t bryanyidev/serviceregistry:0.0.1 .`
+- Run the image I just created: `docker run -d -p8761:8761 --name serviceregistry f040a01130c4`
+  - The last random values is the imageID that I can find when I run `docker images`
+- See the container that was built: `docker ps`
