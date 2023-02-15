@@ -67,7 +67,10 @@
 - `docker ps -a`: See the available containers
 
 ## Creating our own docker images for each service with docker files
+- Run `mvn clean install`
 - Command to build the image for serviceregistry: `docker build -t bryanyidev/serviceregistry:0.0.1 .`
 - Run the image I just created: `docker run -d -p8761:8761 --name serviceregistry f040a01130c4`
   - The last random values is the imageID that I can find when I run `docker images`
+- Run the container with environment variables: `docker run -d -p8761:8761 -e CONFIG_SERVER_URL=host.docker.internal -e EUREKA_SERVER_ADDRESS=http://host.docker.internal:8761/eureka --name serviceregistry 7fc66ea48f83`
 - See the container that was built: `docker ps`
+

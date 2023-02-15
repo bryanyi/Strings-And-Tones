@@ -10,3 +10,11 @@ spring:
         git:
           uri: https://github.com/bryanyi/Strings-And-Tones-Config
           clone-on-start: true
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: ${EUREKA_SERVER_ADDRESS:http://localhost:8761/eureka}

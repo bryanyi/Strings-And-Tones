@@ -17,6 +17,6 @@ spring:
         format_sql: true
     show-sql: true
   config:
-    import: configserver:http://localhost:9296
+    import: configserver:http://${CONFIG_SERVER_URL:localhost}:9296
   zipkin:
     base-url: http://localhost:9411
