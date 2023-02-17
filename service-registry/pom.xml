@@ -32,6 +32,19 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>com.google.cloud.tools</groupId>-->
+<!--			<artifactId>jib-maven-plugin</artifactId>-->
+<!--			<configuration>-->
+<!--				<from>-->
+<!--					<image>openjdk:17</image>-->
+<!--				</from>-->
+<!--				<to>-->
+<!--					<image>registry.hub.docker.com/bryanyidev/servicegistry</image>-->
+<!--					<tags>${project.version}</tags>-->
+<!--				</to>-->
+<!--			</configuration>-->
+<!--		</dependency>-->
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
