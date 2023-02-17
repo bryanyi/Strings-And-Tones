@@ -74,3 +74,15 @@
 - Run the container with environment variables: `docker run -d -p8761:8761 -e CONFIG_SERVER_URL=host.docker.internal -e EUREKA_SERVER_ADDRESS=http://host.docker.internal:8761/eureka --name serviceregistry 7fc66ea48f83`
 - See the container that was built: `docker ps`
 
+## Publish the images I created
+- First, log into docker with `docker login`
+- Then push each image with `docker push bryanyidev/orderservice:latest
+
+## Docker compose
+- One file handy to execute all the files
+
+## Maven JIB Plugin
+- A maven plugin for building docker and oci images Java apps
+- This plugin will automatically create the docker images and also pushing it to your account
+- You first have to go into Intellij's maven settings to log into docker since it pushes the images to the account.
+- After adding it to pom.xml, run this command: `mvn clean install jib:build`
