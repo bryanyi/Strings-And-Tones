@@ -1,5 +1,7 @@
 # Strings and Tones Microservice
 
+![Strings and Tones Backend Microservice Architecture] (./assets/Strings and Tones Architecture Diagram.png)
+
 ## About This Project
 The goal of this project is to develop a working knowledge of building basic microservices using SpringBoot and Docker.
 This project is the backend of an eCommerce store that sells guitars and effects pedals, which is built with a microservice architecture.
