@@ -6,6 +6,8 @@ This project is the backend of an eCommerce store that sells guitars and effects
 
 As a current front-end developer, I wanted to focus more on the intricacies of microservices and the nuiances of Java/SpringBoot since this is my first backend project, and also my first time doing a project with Java.
 
+Everything below this note are my notes as I followed multiple resources (Youtube, blogs, articles, etc) to scaffold a working microservice backend.
+
 ## Creating a Microservice
 `mvn archetype:generate -DgroupId=com.stringsandtones -DartifactId=ProductService -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false`
 
@@ -61,8 +63,6 @@ As a current front-end developer, I wanted to focus more on the intricacies of m
 ## Okta authentication
 - After creating the application, I had to add people to the APPLICATION. 
 - It wasn't enough just to have users set up inside of Okta's general dashboard.
-
-## Unit testing
 
 ## Dockerizing
 - `docker pull redis`: pull down an image.
