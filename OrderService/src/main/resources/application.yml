@@ -18,7 +18,7 @@ spring:
     show-sql: true
   config:
     import:
-      - configserver:http://${CONFIG_SERVER_URL:localhost}:9296
+      - configserver:${CONFIG_SERVER_URL:localhost:9296}
       - secrets.yml
   zipkin:
     base-url: http://localhost:9411

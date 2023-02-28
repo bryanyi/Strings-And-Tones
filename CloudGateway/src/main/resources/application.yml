@@ -6,7 +6,9 @@ spring:
     name: API-GATEWAY
   config:
     import:
-      - configserver:http://${CONFIG_SERVER_URL:localhost}:9296
+#      - configserver:http://${CONFIG_SERVER_URL:localhost}:9296
+      # We can reference each service by name in k8
+      - configserver:${CONFIG_SERVER_URL:localhost:9296}
       - secrets.yml
   zipkin:
     base-url: http://localhost:9411

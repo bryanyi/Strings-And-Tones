@@ -1,9 +1,13 @@
-# Strings and Tones Microservice Notes
+# Strings and Tones Microservice
+
+## About This Project
+The goal of this project is to develop a working knowledge of building basic microservices using SpringBoot and Docker.
+This project is the backend of an eCommerce store that sells guitars and effects pedals, which is built with a microservice architecture.
+
+As a current front-end developer, I wanted to focus more on the intricacies of microservices and the nuiances of Java/SpringBoot since this is my first backend project, and also my first time doing a project with Java.
 
 ## Creating a Microservice
 `mvn archetype:generate -DgroupId=com.stringsandtones -DartifactId=ProductService -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false`
-
-## Seting up a postgres database
 
 
 ## Setting up Eureka Server
@@ -86,3 +90,37 @@
 - This plugin will automatically create the docker images and also pushing it to your account
 - You first have to go into Intellij's maven settings to log into docker since it pushes the images to the account.
 - After adding it to pom.xml, run this command: `mvn clean install jib:build`
+
+## minikube kubectl
+- `kubectl create deployment nginx --image=nginx`: Create a deployment using the nginx image.
+- `kubectl get pods`: See the running pods.
+- `kubectl logs {name of pod from get pods command}`: See the logs of the pod.
+- `kubectl exec -it {name of pod} -- /bin/bash`: Go into pod.
+- `kubectl edit deployment {name of deployment}`: Edit the deployment, which will show a yaml file
+
+## Notes of a K8s YAML configuration
+- There are three main parts to the yaml file - 1. metadata, 2. specification, 3. status.
+  - The status portion is where k8s will compare the yaml file with the current status to keep it consistent
+  - etcd will hold the current status of a k8s component
+- Layers of abstraction:
+  1. Deployment
+    - Under spec, you can have template.metadata.
+    - This metadata is what is applied to a pod.
+    - Essentially, it's metadata within metadata.
+    - template.spec will hold the blueprint of a pod such as its image and port
+  2. RepicaSet
+  3. Pod
+- Connections are established via Deployment and Service
+  1. A service yaml file will have a `spec.selector.app: nginx` field. This is the key field
+  2. This will match with the Deployment yaml file's `metadata.labels.app: nginx` field as well as it's `spec.temaplte.metadata.labels.app: nginx`
+  3. Service yaml is important for the pods to talk to each other.
+- Ingress is used to accept external calls, which then forwards the call to the correct pods.
+
+## K8s Namespace
+- `kubectl create namespace stringsandtones`: This command will create a k8s namespace.
+- `kubectl get namespace`: See the namespaces running
+- Anything created will go into the default namespace if a specific namespace isn't defined.
+- kube-system is a namespace that holds all k8s resources
+- kube-public is a namespace pertaining to public accessibility.
+- kube-node-lease is namespace to get lease information which is useful for healthchecks.
+- Applying to a specific namespace with -n: `kubectl apply -f ./deploy.yaml -n stringsandtones`
